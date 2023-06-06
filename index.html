@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="script.js" defer></script>
+    <title>Newsletter-signup</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="subscribe">
+        <h1>Stay updated</h1>
+        <p class="text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="list">
+          <li class="list_item">
+            <img src="./images/icon-list.svg" alt="list-icon" />Measuring to
+            ensure updates are a success
+          </li>
+          <li class="list_item">
+            <img src="./images/icon-list.svg" alt="list-icon" />Product
+            discovery and building what matters
+          </li>
+          <li class="list_item">
+            <img src="./images/icon-list.svg" alt="list-icon" />And much more!
+          </li>
+        </ul>
+        <form class="form" novalidate>
+          <div class="input_field">
+            <div class="top">
+              <div class="flex-row">
+                <label for="email">Email address</label>
+                <span class="error"></span>
+              </div>
+            </div>
+            <input
+              type="email"
+              id="email"
+              required
+              autocomplete="off"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button class="btn submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+
+      <div class="img-container"></div>
+    </div>
+
+    <div class="message_container">
+      <img class="success_icon" src="./images/icon-list.svg" alt="icon-list" />
+      <h2>Thanks for subscribing!</h2>
+      <p class="text">
+        A confirmation email has been sent to
+        <strong data-email></strong>. Please open it and click the button inside
+        to confirm your
+      </p>
+      <button class="btn dismiss">Dismiss message</button>
+    </div>
+  </body>
+</html>
